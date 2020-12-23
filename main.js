@@ -3,7 +3,32 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const post = document.querySelectorAll(".media-post");
 
+// likeButton.addEventListener('click', function(event) {
+//     alert("Hello World!");
+// });
+
+
+// window.addEventListener('DOMContentLoaded', (event) => {
+//   console.log('DOM fully loaded and parsed');
+// });
+
+window.addEventListener('click', (event) => {
+  console.log('Nah still bound');
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const likeButton = document.querySelectorAll(".like-glpyh");
+
+  likeButton.addEventListener('click', (e) => {
+    console.log(`${e} Nah still bound`);
+  }); 
+
+  if(e.target.className === "like-glyph"){
+    console.log(e.target);
+  };
+});
 
 
 
